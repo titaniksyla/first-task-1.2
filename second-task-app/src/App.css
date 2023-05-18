@@ -1,0 +1,33 @@
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 2% 5%;
+}
+.card-items{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.card-item{
+  border: 1px solid rgba(85, 85, 85, 0.2);
+  border-radius: 20px;
+  padding: 2%;
+  width: 30%;
+  height: max(400px,20vw);
+}
+@media(max-width:990px){
+  .card-item{
+    width: 40%;
+  }
+}
+@media(max-width:720px){
+  .card-item{
+    width: 100%;
+  }
+}
